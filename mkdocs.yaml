@@ -4,6 +4,6 @@ theme:
   language: es
 
 nav:
-  - Inicio: ./docs/index.md
-  - Instalacion: ./docs/instalacion.md
-  - Uso: ./docs/uso.md
+  - Inicio: index.md
+  - Instalacion: instalacion.md
+  - Uso: uso.md
