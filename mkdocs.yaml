@@ -1,5 +1,4 @@
 site_name: Biblioteca API
-docs_dir: .
 theme:
   name: mkdocs
   language: es
