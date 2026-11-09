@@ -4,3 +4,7 @@
 - ¿qué diferencia hay entre commit y push?
 
 La diferencia és que el commit guarda los archivos de manera local y el push los sube de manera remota
+
+- ¿qué ramas integraste y para qué sirve git merge?
+
+Integré las ramas remotas /remote/origin/docs i /remote/origin/openapi. Y el merge sirve para integrar las ramas a la main, es decir, poner el contenido de las ramas dentro de la que tu quieras.
