@@ -1,29 +1,41 @@
 openapi: 3.0.3
 info:
-title: API de Biblioteca
-version: 1.0.0
-description: API para consultar un catálogo de libros
+  title: API de Biblioteca
+  version: 1.0.0
+  description: API para consultar un catálogo de libros
 
 paths:
-/api/libros:
-get:
-summary: Obtener todos los libros
-responses:
-'200':
-description: Lista de libros obtenida correctamente
-content:
-application/json:
-schema:
-type: array
-items:
-type: object
-properties:
-id:
-type: integer
-titulo:
-type: string
-autor:
-type: string
+  /api/libros:
+    get:
+      summary: Obtener todos los libros
+      responses:
+        '200':
+          description: Lista de libros obtenida correctamente
+          content:
+            application/json:
+              schema:
+                type: array
+              items:
+                type: object
+              properties:
+                id:
+                  type: integer
+                titulo:
+                  type: string
+                autor:
+                  type: string
 
-# PENDIENTE: Documentar GET /api/libros/{id}
-# Incluir parametro id (path, requerido, entero) y respuestas 200 y 404.
+  /api/productos/{id}:
+    get:
+      summary: "Obtiene un producto por su id"
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: "Producto entontrado"
+        "404":
+          description: "Producto no encontrado"
